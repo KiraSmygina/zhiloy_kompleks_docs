@@ -1,4 +1,0 @@
-- [Главная](index.html)
-- [О комплексе](about/index.html) 
-- [Услуги](services/index.html)
-- [Инструкции](instructions/index.html)
