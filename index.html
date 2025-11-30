@@ -12,21 +12,15 @@
     <script>
         window.$docsify = {
             name: 'ЖК "Северное Сияние"',
-            // Указываем прямую RAW ссылку
-            loadSidebar: 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/_sidebar.md',
+            // Просто имя файла, без путей
+            loadSidebar: 'sidebar.html',
             subMaxLevel: 3,
             auto2top: true,
-            // ОТКЛЮЧАЕМ basePath и relativePath
+            // ВАЖНО: полное отключение basePath
             basePath: '',
             relativePath: false,
-            // Используем абсолютные RAW ссылки для всех файлов
-            alias: {
-                '/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/README.md',
-                '/about/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/about/README.md',
-                '/services/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/services/README.md',
-                '/instructions/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/README.md',
-                '/instructions/parking.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/parking.md'
-            }
+            // Отключаем все автоматические преобразования путей
+            alias: {}
         }
     </script>
     
