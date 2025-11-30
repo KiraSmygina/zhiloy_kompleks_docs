@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Северное Сияние" - Документация</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
     <div id="app"></div>
 
     <script>
         window.$docsify = {
-            name: 'ЖК "Северное Сияние" - Документация',
-            nameLink: '/',
-            repo: 'KiraSmygina/zhiloy_kompleks_docs',
+            name: 'ЖК "Северное Сияние"',
+            repo: '',
             loadSidebar: true,
             subMaxLevel: 3,
             auto2top: true,
             coverpage: false,
-            mergeNavbar: true,
-            executeScript: true,
-            maxLevel: 4
+            // Исправляем настройки путей
+            basePath: '/zhiloy_kompleks_docs',
+            relativePath: false, // Отключаем относительные пути
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
+                '/.*/about/': '/about/',
+                '/.*/services/': '/services/',
+                '/.*/instructions/': '/instructions/'
+            }
         }
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
