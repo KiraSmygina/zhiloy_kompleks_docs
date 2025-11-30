@@ -13,7 +13,16 @@
         window.$docsify = {
             name: 'ЖК "Северное Сияние"',
             loadSidebar: true,
-            subMaxLevel: 3
+            subMaxLevel: 3,
+            auto2top: true,
+            // Принудительно указываем кодировку
+            executeScript: true,
+            // Обработчик для отладки
+            hooks: {
+                ready: function() {
+                    console.log('Docsify ready!');
+                }
+            }
         }
     </script>
     
