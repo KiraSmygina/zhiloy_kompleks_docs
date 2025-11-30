@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Северное Сияние" - Документация</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
 </head>
 <body>
-    <div id="app">Загрузка документации ЖК "Северное Сияние"...</div>
+    <div id="app"></div>
 
     <script>
         window.$docsify = {
-            name: 'ЖК "Северное Сияние"',
-            repo: '',
+            name: 'ЖК "Северное Сияние" - Документация',
+            nameLink: '/',
+            repo: 'KiraSmygina/zhiloy_kompleks_docs',
             loadSidebar: true,
             subMaxLevel: 3,
             auto2top: true,
             coverpage: false,
-            // Явно указываем путь к sidebar
-            alias: {
-                '/.*/_sidebar.md': '/_sidebar.md'
-            },
-            // Настройки путей для GitHub Pages
-            basePath: '/zhiloy_kompleks_docs'
+            mergeNavbar: true,
+            executeScript: true,
+            maxLevel: 4
         }
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
