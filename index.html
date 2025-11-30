@@ -4,19 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Северное Сияние" - Документация</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-    <style>
-        /* Дополнительные стили для уверенности */
-        .sidebar {
-            background-color: #f8f9fa;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Загрузка документации...</h1>
-        <p>Если вы видите это сообщение более 5 секунд, обновите страницу.</p>
-    </div>
+    <div id="app"></div>
 
     <script>
         window.$docsify = {
@@ -26,18 +17,16 @@
             subMaxLevel: 3,
             auto2top: true,
             coverpage: false,
-            notFoundPage: true,
-            executeScript: true,
-            maxLevel: 4,
-            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            // Явно указываем имя файла sidebar
             alias: {
                 '/.*/_sidebar.md': '/_sidebar.md'
-            }
+            },
+            // Настройки для GitHub Pages
+            basePath: '/zhiloy_kompleks_docs',
+            relativePath: true
         }
     </script>
     
-    <!-- Docsify -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
