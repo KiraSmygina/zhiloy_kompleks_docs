@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>ЖК "Северное Сияние" - Документация</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖК "Северное Сияние" - Документация</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <style>
+        /* Дополнительные стили для уверенности */
+        .sidebar {
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
-  <div id="app"></div>
-  
-  <script>
-    window.$docsify = {
-      name: 'ЖК "Северное Сияние"',
-      loadSidebar: true,
-      subMaxLevel: 3,
-      auto2top: true,
-      coverpage: false
-    }
-  </script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <div id="app">
+        <h1>Загрузка документации...</h1>
+        <p>Если вы видите это сообщение более 5 секунд, обновите страницу.</p>
+    </div>
+
+    <script>
+        window.$docsify = {
+            name: 'ЖК "Северное Сияние"',
+            repo: '',
+            loadSidebar: true,
+            subMaxLevel: 3,
+            auto2top: true,
+            coverpage: false,
+            notFoundPage: true,
+            executeScript: true,
+            maxLevel: 4,
+            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            }
+        }
+    </script>
+    
+    <!-- Docsify -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
