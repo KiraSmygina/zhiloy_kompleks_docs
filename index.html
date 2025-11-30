@@ -9,23 +9,25 @@
 <body>
     <div id="app"></div>
 
-    <script>
-        window.$docsify = {
-            name: 'ЖК "Северное Сияние"',
-            loadSidebar: true,
-            subMaxLevel: 3,
-            auto2top: true,
-            // Принудительно указываем кодировку
-            executeScript: true,
-            // Обработчик для отладки
-            hooks: {
-                ready: function() {
-                    console.log('Docsify ready!');
-                }
-            }
-        }
-    </script>
+<script>
+window.$docsify = {
+    name: 'ЖК "Северное Сияние"',
+    // Используем прямую RAW ссылку на sidebar
+    loadSidebar: 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/_sidebar.md',
+    subMaxLevel: 3,
+    auto2top: true,
+    // И для остальных файлов тоже используем RAW ссылки
+    alias: {
+        '/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/README.md',
+        '/about/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/about/README.md',
+        '/services/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/services/README.md',
+        '/instructions/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/README.md',
+        '/instructions/parking.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/parking.md'
+    }
+}
+</script>
     
     <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
+
