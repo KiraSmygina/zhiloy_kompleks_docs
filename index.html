@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЖК "Северное Сияние"</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
     <div id="app"></div>
 
-<script>
-window.$docsify = {
-    name: 'ЖК "Северное Сияние"',
-    // Используем прямую RAW ссылку на sidebar
-    loadSidebar: 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/_sidebar.md',
-    subMaxLevel: 3,
-    auto2top: true,
-    // И для остальных файлов тоже используем RAW ссылки
-    alias: {
-        '/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/README.md',
-        '/about/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/about/README.md',
-        '/services/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/services/README.md',
-        '/instructions/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/README.md',
-        '/instructions/parking.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/parking.md'
-    }
-}
-</script>
+    <script>
+        window.$docsify = {
+            name: 'ЖК "Северное Сияние"',
+            // Указываем прямую RAW ссылку
+            loadSidebar: 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/_sidebar.md',
+            subMaxLevel: 3,
+            auto2top: true,
+            // ОТКЛЮЧАЕМ basePath и relativePath
+            basePath: '',
+            relativePath: false,
+            // Используем абсолютные RAW ссылки для всех файлов
+            alias: {
+                '/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/README.md',
+                '/about/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/about/README.md',
+                '/services/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/services/README.md',
+                '/instructions/README.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/README.md',
+                '/instructions/parking.md': 'https://raw.githubusercontent.com/KiraSmygina/zhiloy_kompleks_docs/main/instructions/parking.md'
+            }
+        }
+    </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
-
