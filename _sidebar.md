@@ -1,5 +1,6 @@
-- [Главная](README.md)
-- [О комплексе](about/README.md)
-- [Услуги и сервисы](services/README.md)
-- [Инструкции](instructions/README.md)
-  - [Парковка](instructions/parking.md)
+[Главная](README.md)
+[О комплексе](about/README.md)
+[Услуги и сервисы](services/README.md)
+[Инструкции](instructions/README.md)
+[Парковка](instructions/parking.md)
+
